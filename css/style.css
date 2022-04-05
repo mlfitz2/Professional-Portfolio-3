@@ -11,6 +11,7 @@ body {
     flex-direction: row;
 }
 
+/* Navbar */
 .navbar {
     width: 15%;
     display: flex;
@@ -35,6 +36,7 @@ body {
     cursor: pointer;
 }
 
+/*Main display*/
 main {
     width: 85%;
     background-color: var(--forest-green);
@@ -57,6 +59,7 @@ p {
     font-size: 1.5em;
 }
 
+/* About Me page */
 .about-me {
     font-size: 1.8em;
 }
@@ -65,6 +68,7 @@ p {
     border: 10px black solid;
 }
 
+/* Portfolio page */
 .project-card {
     width: 30%;
     cursor: pointer;
@@ -83,6 +87,7 @@ h4 {
     height: 80%;
 }
 
+/* Contact Me page */
 #links-area {
     width: 90%;
     height: 75%;
@@ -104,6 +109,7 @@ h4 {
     color: var(--dark-grey);
 }
 
+/* Pages for individual projects */
 .project-demo-pic {
     width: 45%;
 }
@@ -122,7 +128,8 @@ h4 {
     cursor: pointer;
     font-weight: 900;
 }
-
+/* 
+Formatting */
 a:visited, a:link {
     text-decoration: none;
     color: var(--dark-grey);  
@@ -162,7 +169,7 @@ a:visited, a:link {
     }
 }
 
-
+/* Mobile responsiveness */
 
 @media screen and (max-width: 1250px) {
     .nav-btn {
