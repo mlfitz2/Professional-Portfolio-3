@@ -8,10 +8,11 @@ const intro = document.getElementById('intro');
 
 const pubCrawlerBtn = document.getElementById('pubcrawler');
 const pubCrawler = document.getElementById('pubcrawler-page');
-const workdayPlannerBtn = document.getElementById('workday-planner');
-const workdayPlanner = document.getElementById('workday-planner-page');
-const quizBtn = document.getElementById('js-quiz');
-const jsQuiz = document.getElementById('quiz-page');
+const happyPlaceBtn = document.getElementById('happy-place');
+const happyPlace = document.getElementById('happy-place-page');
+const noteTakerBtn = document.getElementById('note-taker');
+const noteTaker = document.getElementById('note-taker-page');
+
 
 //Renders About Me section
 function showAboutMe() {
@@ -19,9 +20,9 @@ function showAboutMe() {
     myPortfolio.setAttribute('class', 'hidden');
     contactMe.setAttribute('class', 'hidden');
     aboutMe.removeAttribute('class', 'hidden');
-    workdayPlanner.setAttribute('class', 'hidden');
+    happyPlace.setAttribute('class', 'hidden');
     pubCrawler.setAttribute('class', 'hidden');
-    jsQuiz.setAttribute('class', 'hidden');
+    noteTaker.setAttribute('class', 'hidden');
 
     aboutMeBtn.setAttribute('class', 'nav-btn selected');
     myPortfolioBtn.setAttribute('class', 'nav-btn');
@@ -33,9 +34,9 @@ function showMyPortfolio() {
     myPortfolio.removeAttribute('class', 'hidden');
     contactMe.setAttribute('class', 'hidden');
     aboutMe.setAttribute('class', 'hidden');
-    workdayPlanner.setAttribute('class', 'hidden');
+    happyPlace.setAttribute('class', 'hidden');
     pubCrawler.setAttribute('class', 'hidden');
-    jsQuiz.setAttribute('class', 'hidden');
+    noteTaker.setAttribute('class', 'hidden');
 
     aboutMeBtn.setAttribute('class', 'nav-btn');
     myPortfolioBtn.setAttribute('class', 'nav-btn selected');
@@ -48,9 +49,9 @@ function showContactMe() {
     myPortfolio.setAttribute('class', 'hidden');
     contactMe.removeAttribute('class', 'hidden');
     aboutMe.setAttribute('class', 'hidden');
-    workdayPlanner.setAttribute('class', 'hidden');
+    happyPlace.setAttribute('class', 'hidden');
     pubCrawler.setAttribute('class', 'hidden');
-    jsQuiz.setAttribute('class', 'hidden');
+    noteTaker.setAttribute('class', 'hidden');
     
     aboutMeBtn.setAttribute('class', 'nav-btn');
     myPortfolioBtn.setAttribute('class', 'nav-btn');
@@ -63,15 +64,16 @@ function showPubCrawler() {
     pubCrawler.removeAttribute('class', 'hidden');
 }
 
-//Renders Workday Planner page
-function showWorkdayPlanner() {
+//Renders Happy Place page
+function showHappyPlace() {
     myPortfolio.setAttribute('class', 'hidden');
-    workdayPlanner.removeAttribute('class', 'hidden');
+    happyPlace.removeAttribute('class', 'hidden');
 }
 
-function showQuiz() {
+//Renders Note Taker page
+function showNoteTaker() {
     myPortfolio.setAttribute('class', 'hidden');
-    jsQuiz.removeAttribute('class', 'hidden');
+    noteTaker.removeAttribute('class', 'hidden');
 }
 
 
@@ -99,11 +101,11 @@ pubCrawlerBtn.addEventListener('click', function() {
 })
 
 //Event listener: show workday planner page
-workdayPlannerBtn.addEventListener('click', function() {
-    showWorkdayPlanner();
+noteTakerBtn.addEventListener('click', function() {
+    showNoteTaker();
 })
 
-//Event listener: show JS quiz
-quizBtn.addEventListener('click', function() {
-    showQuiz();
+//Event listener: show The Happy Place page
+happyPlaceBtn.addEventListener('click', function() {
+    showHappyPlace();
 })

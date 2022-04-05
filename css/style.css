@@ -5,6 +5,140 @@
 }
 
 body {
+    width: 100vw;
+    font-family: 'Poiret One', serif;
+    background-color: var(--dark-grey);
+}
+
+.navbar {
+    width: 15%;
+}
+
+.nav-btn {
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
+    font-size: 2em;
+    width: 10vw;
+    height: 10vw;
+    font-weight: 900;
+}
+
+main {
+    width: 85%;
+    background-color: var(--forest-green);
+    color: var(--light-grey);
+    border-radius: 30px;
+}
+
+#intro {
+    font-size: 4em;
+    font-weight: 900;
+}
+
+#avatar {
+    border: 10px black solid;
+}
+
+
+
+
+
+.hidden {
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
     background-color: var(--dark-grey);
     display: flex;
     justify-content: space-evenly;
@@ -76,7 +210,7 @@ nav {
 }
 
 /* Buttons pulse */
-@keyframes pulse {
+/* @keyframes pulse {
     0% {
         transform: scale(0.95);
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
@@ -154,8 +288,8 @@ a:visited, a:link {
     flex-wrap: wrap;
     justify-content: space-around;
     /* align-items: center; */
-}
-
+/* } */
+/* 
 .project-card {
     display: flex;
     flex-direction: column;
@@ -184,7 +318,7 @@ h4 {
 
 
 /* Individual project's page */
-.project-demo-area {
+/* .project-demo-area {
     height: 40%;
     display: flex;
     flex-direction: row;
@@ -222,14 +356,14 @@ h4 {
 
 .hidden {
     display: none !important;
-}
+} */ 
 
 
 
 
 
 
-@media screen and (max-width: 808px) {
+/* @media screen and (max-width: 808px) {
 
     body {
         flex-direction: column;
@@ -280,8 +414,8 @@ h4 {
     h4 {
         font-size: 1.2em;
         min-height: 5vh;
-    }
-    
+    } */
+/*     
     .project-demo-area {
         flex-direction: column;
         align-items: center;
@@ -302,9 +436,9 @@ h4 {
     }
 
 
-}
+} */
 
-@media screen and (max-width: 408px) {
+/* @media screen and (max-width: 408px) {
     h4 {
         font-size: 1em;
     }
@@ -313,4 +447,4 @@ h4 {
         height: 10vh;
     }
 
-}
+}   */

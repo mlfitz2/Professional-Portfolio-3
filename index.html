@@ -6,28 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mike Fitzpatrick</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="d-flex flex-row">
     
     <!-- Navbar -->
-        <nav id="nav">
-            <h2 class="nav-btn" id="about-me-btn">About Me</h2>
-            <h2 class="nav-btn" id="portfolio-btn">My Portfolio</h2>
-            <h2 class="nav-btn" id="contact-me-btn">Contact Me</h2>
+        <nav id="nav" class="navbar flex-column justify-content-around">
+            <h2 class="nav-btn d-flex p-4 rounded-circle flex-wrap text-center justify-content-center align-items-center" id="about-me-btn">About Me</h2>
+            <h2 class="nav-btn d-flex p-4 rounded-circle flex-wrap text-center justify-content-center align-items-center" id="portfolio-btn">My Portfolio</h2>
+            <h2 class="nav-btn d-flex p-4 rounded-circle flex-wrap text-center justify-content-center align-items-center" id="contact-me-btn">Contact Me</h2>
         </nav>
 
     <!-- Main area where info is displayed dynamically -->
-    <main>
+    <main class="d-flex text-center justify-content-center align-items-center p-3 m-5">
 
         <!-- Introduction text -->
         <section id="intro" class="">
             <h1>Hi there!</h1>
-            <img id="avatar" src="assets/avatar-grey.jpg">
+            <img id="avatar" class="rounded-circle" src="assets/avatar-grey.jpg">
             <h1>I'm Mike.</h1>
         </section>
 
@@ -48,13 +49,13 @@
                     <h4>PubCrawler</h4>
                     <img id="pubcrawler-pic" class="portfolio-pic" src="assets/pubcrawler.JPG">
                 </div>
-                <div class="project-card" id="workday-planner">
-                    <h4>Workday Planner</h4>
-                    <img id="planner-pic" class="portfolio-pic" src="assets/planner.JPG">
+                <div class="project-card" id="happy-place">
+                    <h4>The Happy Place</h4>
+                    <img id="happy-place-pic" class="portfolio-pic" src="assets/happy-place.JPG">
                 </div>
-                <div class="project-card" id="js-quiz">
-                    <h4>Interactive Quiz</h4>
-                    <img id="js-quiz-pic" class="portfolio-pic" src="assets/js-quiz.JPG">
+                <div class="project-card" id="note-taker">
+                    <h4>Note Taker</h4>
+                    <img id="note-taker-pic" class="portfolio-pic" src="assets/note-taker.JPG">
                 </div>
             </div>
         </section>
@@ -71,34 +72,29 @@
                 </div>
             </section>
 
-            <section class="project-page hidden" id="workday-planner-page">
-                <h3>Workday Planner</h3>
-                <p>This workday planner allows the user to input their plans for a day into one-hour time blocks. The data is saved to local storage to be available at a later time. The color coding provides an at-a-glance view of past, present and future activities.</p>
+            <section class="project-page hidden" id="happy-place-page">
+                <h3>The Happy Place</h3>
+                <p>The Happy Place is for users who are tired of the toxicity of mainstream social networks. This app is a place to reflect on what we're grateful for, and can be shared publicly or kept private like a journal. Inspiring quotes also help to brighten your day!</p>
                 <div class="project-demo-area">
-                    <img class="project-demo-pic" src="assets/planner.JPG">
+                    <img class="project-demo-pic" src="assets/happy-place.JPG">
                     <div class="project-links-area">
-                        <a class="project-link" href="https://mlfitz2.github.io/Workday-Scheduler/" target="_blank">Deployed App</a>
-                        <a class="project-link" href="https://github.com/mlfitz2/Workday-Scheduler" target="_blank">GitHub</a>
+                        <a class="project-link" href="https://the-happy-place-app.herokuapp.com/" target="_blank">Deployed App</a>
+                        <a class="project-link" href="https://github.com/mlfitz2/The-Happy-Place" target="_blank">GitHub</a>
                     </div>
                 </div>
             </section>
 
-            <section class="project-page hidden" id="quiz-page">
-                <h3>Interactive Quiz</h3>
-                <p>This quiz helps the user practice their knowledge of JavaScript by testing their understanding of key concepts. The user attempts to answer all questions correctly as fast as they can. Incorrect answers are penalized with a reduction on the timer, and the final score is the remaining time. High scores can be saved to a scoreboard on local storage.</p>
+            <section class="project-page hidden" id="note-taker-page">
+                <h3>Note Taker</h3>
+                <p>This app is a handy note taker, allowing users to save posts to an database for future reference. They can also be edited, or deleted when no longer required.</p>
                 <div class="project-demo-area">
-                    <img class="project-demo-pic" src="assets/js-quiz.JPG">
+                    <img class="project-demo-pic" src="assets/note-taker.JPG">
                     <div class="project-links-area">
-                        <a class="project-link" href="https://mlfitz2.github.io/JavaScript-Quiz/" target="_blank">Deployed App</a>
-                        <a class="project-link" href="https://github.com/mlfitz2/JavaScript-Quiz" target="_blank">GitHub</a>
+                        <a class="project-link" href="https://mikes-note-taking-app.herokuapp.com" target="_blank">Deployed App</a>
+                        <a class="project-link" href="https://github.com/mlfitz2/Note-Taker" target="_blank">GitHub</a>
                     </div>
                 </div>
             </section>
-
-
-
-
-
 
 
         <!-- Contact Info Section -->
