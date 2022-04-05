@@ -13,17 +13,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="d-flex flex-row">
+<body class="d-flex">
     
     <!-- Navbar -->
-        <nav id="nav" class="navbar flex-column justify-content-around">
-            <h2 class="nav-btn d-flex p-4 rounded-circle flex-wrap text-center justify-content-center align-items-center" id="about-me-btn">About Me</h2>
-            <h2 class="nav-btn d-flex p-4 rounded-circle flex-wrap text-center justify-content-center align-items-center" id="portfolio-btn">My Portfolio</h2>
-            <h2 class="nav-btn d-flex p-4 rounded-circle flex-wrap text-center justify-content-center align-items-center" id="contact-me-btn">Contact Me</h2>
+        <nav id="nav" class="navbar">
+            <h2 class="nav-btn" id="about-me-btn">About Me</h2>
+            <h2 class="nav-btn" id="portfolio-btn">My Portfolio</h2>
+            <h2 class="nav-btn" id="contact-me-btn">Contact Me</h2>
         </nav>
 
     <!-- Main area where info is displayed dynamically -->
-    <main class="d-flex text-center justify-content-center align-items-center p-3 m-5">
+    <main class="d-flex text-center justify-content-center align-items-center p-3">
 
         <!-- Introduction text -->
         <section id="intro" class="">
@@ -34,7 +34,7 @@
 
         <!-- About Me Section -->
         <section id="about-me" class="hidden">
-            <h3>Let me introduce myself!</h3>
+            <h3 class="m-5">Let me introduce myself!</h3>
             <p class="about-me">I'm a programmer based in Seattle, WA. I create responsive websites that look and function great across all platforms. I'm currently working as an IT Recruiter, and through this role fell in love with coding and all things tech. Now I'm looking to apply my skills full-time as a Web Developer!</p>
             <p class="about-me">When I'm not busy coding, I like to keep busy with reading, running, yoga, meditation, exploring the amazing sights of the Pacific Northwest with my husband, and playing with our eccentric cat.</p>
         </section>
@@ -62,8 +62,8 @@
 
             <section class="project-page hidden" id="pubcrawler-page">
                 <h3>PubCrawler</h3>
-                <p>PubCrawler allows users to select a city, or use their current location, to see a map of breweries in the area. They can select the ones they like, and the app will map out the most efficient route for a pub crawl between them. The user can save their favorite routes to local storage to refer back to them next time.</p>
-                <div class="project-demo-area d-flex flex-row justify-content-around">
+                <p>PubCrawler allows users to select a city, or use their current location, to see a map of breweries in the area. Select the ones you like, and the app will display the most efficient route for a pub crawl between them. You can save your favorite routes to local storage and refer back to them next time.</p>
+                <div class="project-demo-area">
                     <img class="project-demo-pic" src="assets/pubcrawler.JPG">
                     <div class="project-links-area d-flex flex-column">
                         <a class="project-link p-3 m-2 d-flex justify-content-center align-items-center" href="https://benfok.github.io/pub-crawler" target="_blank">Deployed App</a>
@@ -75,9 +75,9 @@
             <section class="project-page hidden" id="happy-place-page">
                 <h3>The Happy Place</h3>
                 <p>The Happy Place is for users who are tired of the toxicity of mainstream social networks. This app is a place to reflect on what we're grateful for, and can be shared publicly or kept private like a journal. Inspiring quotes also help to brighten your day!</p>
-                <div class="project-demo-area d-flex flex-row justify-content-around">
+                <div class="project-demo-area">
                     <img class="project-demo-pic" src="assets/happy-place.JPG">
-                    <div class="project-links-area d-flex flex-column">
+                    <div class="project-links-area d-flex flex-column justify-content-around">
                         <a class="project-link p-3 m-2 d-flex justify-content-center align-items-center" href="https://the-happy-place-app.herokuapp.com/" target="_blank">Deployed App</a>
                         <a class="project-link p-3 m-2 d-flex justify-content-center align-items-center" href="https://github.com/mlfitz2/The-Happy-Place" target="_blank">GitHub</a>
                     </div>
@@ -87,7 +87,7 @@
             <section class="project-page hidden" id="note-taker-page">
                 <h3>Note Taker</h3>
                 <p>This app is a handy note taker, allowing users to save posts to a database for future reference. They can also be edited, or deleted when no longer required.</p>
-                <div class="project-demo-area d-flex flex-row justify-content-around">
+                <div class="project-demo-area">
                     <img class="project-demo-pic" src="assets/note-taker.JPG">
                     <div class="project-links-area d-flex flex-column">
                         <a class="project-link p-3 m-2 d-flex justify-content-center align-items-center" href="https://mikes-note-taking-app.herokuapp.com" target="_blank">Deployed App</a>
