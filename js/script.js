@@ -29,6 +29,7 @@ function showAboutMe() {
     contactMeBtn.setAttribute('class', 'nav-btn');
 }
 
+//Renders portfolio
 function showMyPortfolio() {
     intro.setAttribute('class', 'hidden');
     myPortfolio.removeAttribute('class', 'hidden');
